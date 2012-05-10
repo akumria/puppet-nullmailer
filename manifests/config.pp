@@ -3,9 +3,9 @@ class nullmailer::config {
   if $nullmailer::manage_etc_mailname == true {
 
     file {'nullmailer /etc/mailname for $fqdn':
-      name => '/etc/mailname',
-      content => "$::fqdn\n",
       ensure  => present,
+      name    => '/etc/mailname',
+      content => "$::fqdn\n",
     }
 
   }
