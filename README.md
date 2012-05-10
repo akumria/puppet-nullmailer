@@ -23,21 +23,24 @@ incoming email from various machines.
 Basic usage
 -----------
 
-    nullmailer { }
+    class {'nullmailer':  }
 
 To configure who will receive all email:
 
-    nullmailer {
-		adminaddr => 'puppet-rockstar@example.com'
+    class {'nullmailer':
+        adminaddr => "puppet-rockstar@example.com"
     }
 
 Or to change the machine where email is sent to:
 
-	nullmailer {
-		remoterelay => 'elsewhere.example.com'
-	}
+    class {'nullmailer':
+        remoterelay => "elsewhere.example.com"
+    }
 
-Or things to modify are listed in the init.pp file
+When modifying these parameters, please ensure the value is in
+double quotes.
+
+Other things to modify are listed in the init.pp file
 
 
 Contributors
