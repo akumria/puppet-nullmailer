@@ -7,6 +7,7 @@ class nullmailer::params {
                          'courier-mta', 'lsb-invalid-mta',
                          'exim4-base', 'exim4-config', 'exim4']
       $service = 'nullmailer'
+      $manage_etc_mailname = true
     }
     default: {
       fail("Unsupported platform: ${::operatingsystem}")

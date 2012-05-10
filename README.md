@@ -20,6 +20,9 @@ root@example.com via SMTP to smtp.example.com
 This may require you to configure your SMTP server to accept
 incoming email from various machines.
 
+NOTE: /etc/mailname must be set to a reasonable value. This
+module will, by default, set it to $::fqdn
+
 Basic usage
 -----------
 
