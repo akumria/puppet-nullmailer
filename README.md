@@ -1,8 +1,8 @@
 Puppet module for nullmailer
 ============================
 
-Nullmailer is useful in situations where you have machines but do not with
-them to configured with a full email service.
+Nullmailer is useful in situations where you have machines but do not wish
+to configure them with a full email service (mail transfer agent, mta).
 
 Particularly to send email about local activity to a centralised place.
 
