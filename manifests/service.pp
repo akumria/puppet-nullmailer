@@ -4,5 +4,6 @@ class nullmailer::service {
     enable => true,
     hasstatus => false,
     hasrestart => true,
+    require => Class['nullmailer::config'],
   }
 }
