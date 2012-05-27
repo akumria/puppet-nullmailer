@@ -75,6 +75,12 @@ Other available options (for Nullmailer 1.10) are:
 - --x509fmtdef, X.509 files are in DER format (1.10+)
 - --insecure, Do not abort if server certificate fails validation (1.10+)
 
+Notes
+-----
+
+nullmailer is capable of handling multiple remote SMTP servers for delivery.
+If this is your setup, this module will not work out of the box for you.
+
 Contributors
 ------------
 
