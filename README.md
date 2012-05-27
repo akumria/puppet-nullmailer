@@ -45,6 +45,35 @@ double quotes.
 
 Other things to modify are listed in the init.pp file
 
+Advacnced usage
+---------------
+
+nullmailer is also able to use remote relay which are on different ports, require authentication, etc.
+
+As the combination of options will vary widely between various hosts, instead an 'opts' variable is provided.
+
+    class {'nullmailer':
+        remoteopts => "--port=2525"
+    }
+
+Send to port 2525 instead of port 25
+
+    class {'nullmailer':
+        remoteopts => "--user=foo --pass=bar"
+    }
+
+Other available options (for Nullmailer 1.10) are:
+
+- --port, set the port number of the remote host to connect to
+- --user, set the user name to be used for authentication
+- --pass, set the password for authentication
+- --auth-login, use AUTH LOGIN instead of auto-detecting in SMTP
+- --ssl, Connect using SSL (on port 465 instead) (1.10+)
+- --starttls, use STARTTLS command (1.10+)
+- --x509cafile, Certificate authority trust file (1.10+)
+- --x509crlfile, Certificate revocation list file (1.10+)
+- --x509fmtdef, X.509 files are in DER format (1.10+)
+- --insecure, Do not abort if server certificate fails validation (1.10+)
 
 Contributors
 ------------
