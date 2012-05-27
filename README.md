@@ -50,6 +50,7 @@ Contributors
 ------------
 
  * [Anand Kumria](https://github.com/akumria) ([@akumria](https://twitter.com/akumria))
+ * [Callum Macdonald](https://github.com/chmac)
 
 
 Copyright and License

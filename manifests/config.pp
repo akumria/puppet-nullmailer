@@ -11,7 +11,7 @@ class nullmailer::config {
   }
 
   file { '/etc/nullmailer/remotes':
-    content => "$nullmailer::remoterelay smtp\n",
+    content => "$nullmailer::remoterelay smtp $nullmailer::remoteopts\n",
     require => Class['nullmailer::package'],
     notify  => Class['nullmailer::service'],
   }

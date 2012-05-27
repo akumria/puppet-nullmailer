@@ -4,7 +4,8 @@ class nullmailer (
   $service = $nullmailer::params::service,
   $manage_etc_mailname = $nullmailer::params::manage_etc_mailname,
   $adminaddr = "root@$::domain",
-  $remoterelay = "smtp.$::domain"
+  $remoterelay = "smtp.$::domain",
+  $remoteopts = ''
 
 ) inherits nullmailer::params {
 
