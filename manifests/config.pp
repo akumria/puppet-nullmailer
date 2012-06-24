@@ -16,13 +16,11 @@ class nullmailer::config {
     notify  => Class['nullmailer::service'],
   }
 
-  if($nullmailer::adminaddr == "") {
+  if ($nullmailer::adminaddr == '') {
     file { '/etc/nullmailer/adminaddr':
       ensure => absent,
     }
-  }
-  else
-  {
+  } else {
     file { '/etc/nullmailer/adminaddr':
       content => "$nullmailer::adminaddr\n",
       require => Class['nullmailer::package'],

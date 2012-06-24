@@ -86,6 +86,7 @@ Contributors
 
  * [Anand Kumria](https://github.com/akumria) ([@akumria](https://twitter.com/akumria))
  * [Callum Macdonald](https://github.com/chmac)
+ * [Arne Schwabe](https://githib.com/schwabe)
 
 
 Copyright and License
