@@ -2,11 +2,11 @@ Puppet module for nullmailer
 ============================
 
 Nullmailer is useful in situations where you have machines but do not wish
-to configure them with a full email service (mail transfer agent, mta).
+to configure them with a full email service (mail transfer agent, MTA).
 
 Particularly to send email about local activity to a centralised place.
 
-By default, the module will configure things to be sent, via smtp, to:
+By default, the module will configure things to be sent, via SMTP, to:
 
 	smtp.$::domain
 
@@ -45,12 +45,12 @@ double quotes.
 
 Other things to modify are listed in the init.pp file
 
-Advacnced usage
+Advanced usage
 ---------------
 
-nullmailer is also able to use remote relay which are on different ports, require authentication, etc.
+nullmailer is also able to use a remote relay which is on a different port, requires authentication, etc.
 
-As the combination of options will vary widely between various hosts, instead an 'opts' variable is provided.
+As the combination of options will vary widely between various setups, instead an 'opts' variable is provided.
 
     class {'nullmailer':
         remoteopts => "--port=2525"
@@ -62,7 +62,7 @@ Send to port 2525 instead of port 25
         remoteopts => "--user=foo --pass=bar"
     }
 
-Other available options (for Nullmailer 1.10) are:
+Other available options (for Nullmailer 1.10+) are:
 
 - --port, set the port number of the remote host to connect to
 - --user, set the user name to be used for authentication
