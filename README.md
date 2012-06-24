@@ -75,6 +75,18 @@ Other available options (for Nullmailer 1.10) are:
 - --x509fmtdef, X.509 files are in DER format (1.10+)
 - --insecure, Do not abort if server certificate fails validation (1.10+)
 
+Another use case might be *not* rewriting, or even having, a specific
+admin address to send email to. In this case, set adminaddr to the
+magic value of an empty string, like so;
+
+    class {'nullmailer':
+        adminaddr => '',
+    }
+
+With things set up like this the remoterelay decides what addresses
+will be rewritten rather than all of them being at the client prior
+to sending.
+
 Notes
 -----
 
