@@ -1,5 +1,5 @@
 name    'akumria-nullmailer'
-version '1.2.1'
+version '1.2.2'
 source 'UNKNOWN'
 author 'akumria'
 license 'GNU General Public License, Version 3+'
