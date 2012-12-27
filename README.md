@@ -6,11 +6,11 @@ to configure them with a full email service (mail transfer agent, MTA).
 
 Particularly to send email about local activity to a centralised place.
 
-By default, the module will configure things to be sent, via SMTP, to:
+By default, the module will configure things to be sent, via SMTP, to the machine:
 
 	smtp.$::domain
 
-to
+and then to the address:
 
 	root@$::domain
 
@@ -50,7 +50,7 @@ Advanced usage
 
 nullmailer is also able to use a remote relay which is on a different port, requires authentication, etc.
 
-As the combination of options will vary widely between various setups, instead an 'opts' variable is provided.
+As the combination of options will vary widely between various setups, instead a 'remoteopts' variable is provided.
 
     class {'nullmailer':
         remoteopts => "--port=2525"
