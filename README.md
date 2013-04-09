@@ -105,7 +105,7 @@ Contributors
 Copyright and License
 ---------------------
 
-Copyright 2012 [Linuxpeak](https://www.linuxpeak.com/) Pty Ltd.
+Copyright 2012-2013 [Linuxpeak](https://www.linuxpeak.com/) Pty Ltd.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
