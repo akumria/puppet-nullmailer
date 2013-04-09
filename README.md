@@ -84,8 +84,8 @@ magic value of an empty string, like so;
     }
 
 With things set up like this the remoterelay decides what addresses
-will be rewritten rather than all of them being at the client prior
-to sending.
+will be rewritten rather than all of them being rewritten at the client
+prior to sending.
 
 Notes
 -----
