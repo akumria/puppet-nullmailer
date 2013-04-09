@@ -16,7 +16,7 @@ class nullmailer::config {
     notify  => Class['nullmailer::service'],
     owner   => 'mail',
     group   => 'mail',
-    mode    => 0600,
+    mode    => '0600',
   }
 
   if ($nullmailer::adminaddr == '') {
@@ -30,7 +30,7 @@ class nullmailer::config {
       notify  => Class['nullmailer::service'],
       owner   => 'mail',
       group   => 'mail',
-      mode    => 0600,
+      mode    => '0600',
     }
   }
 }
