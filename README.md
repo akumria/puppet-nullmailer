@@ -100,6 +100,8 @@ Contributors
  * [Callum Macdonald](https://github.com/chmac)
  * [Arne Schwabe](https://githib.com/schwabe)
  * [Klaus Ethgen](https://github.com/mowgli)
+ * [Udo Waechter](https://github.com/zoide)
+ * [David Schmitt](https://github.com/DavidS)
 
 
 Copyright and License
