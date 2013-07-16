@@ -1,0 +1,33 @@
+v1.3.2
+    Modifications to enable working with [Geppetto](http://cloudsmith.github.io/geppetto/)
+    Have the license display on Puppet forge
+    Create this Changelog for display
+
+v1.3.1
+    Bugfix for semantic versioning. All three elements are required.
+
+v1.3
+    Make the adminaddr file protected as the address might be sensitive
+    Update the copyright year
+
+v1.2.2
+    Make the English in the Readme easier to understand
+
+v1.2.1
+    Release to correct an upload issue with Puppet forge
+
+v1.2.0
+    Document how, and why, you might want to remove the adminaddr file
+
+v1.1.0
+    Document how, and what, options are available when specifying the remote relay
+
+v1.0.1
+    Workaround a Puppet 2.6 syntax bug
+
+v1.0.0
+    Initial release
+        - Ensure the service is up and running
+        - Install appropriate packages, and ensure that inappropriate ones are not installed
+        - Default configuration to root@<domain> via the host smtp.<domain>
+        - Set /etc/mailname if required
